@@ -31,8 +31,27 @@ values( 6,'Sarah', 'Wilson','sarah.wilson@example.com',10000,'Home Improvement',
 ```
 ### Select all loan applications from the table
 ```sql
-select * from loans;
+select * from Loans;
 ```
+### select all loan applications with a status of "Approved"
+```sql
+select * from Loans
+where status='Approved';
+```
+### select all loan applications with a loan amount greater than 10000.
+```sql
+select * from Loans
+where LoanAmount > 10000
+```
+### Update the status of all loan applications with a purpose of "debt consolidation" to "approved"
+update Loans set status='Approved' where Purpose='Debt Consolidation';
+### Update the loan amount of a specific loan application by its ID.
+update Loans set LoanAmount=19000 where ID=1;
+### Delete all loan applications with a status of "Denied".
+Delete from Loans where status='Denied';
+### select the first name, last name and loan amount of all loan applications.
+```sql
+select FirstName,LastName,LoanAmount form Loans;
 
 
 
