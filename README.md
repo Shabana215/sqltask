@@ -44,14 +44,56 @@ select * from Loans
 where LoanAmount > 10000
 ```
 ### Update the status of all loan applications with a purpose of "debt consolidation" to "approved"
+```sql
 update Loans set status='Approved' where Purpose='Debt Consolidation';
+```
 ### Update the loan amount of a specific loan application by its ID.
+```sql
 update Loans set LoanAmount=19000 where ID=1;
+```
 ### Delete all loan applications with a status of "Denied".
+```sql
 Delete from Loans where status='Denied';
+```
 ### select the first name, last name and loan amount of all loan applications.
 ```sql
-select FirstName,LastName,LoanAmount form Loans;
+select FirstName,LastName,LoanAmount from Loans;
+```
+### Select the average loan amount of all approved loan applications
+```sql
+select avg(LoanAmount) from Loans where status='Approved';
+```
+### Update the email address of a specific loan application by its ID
+```sql
+Update Loans set Email='JOHN.DOE@example.com where ID=1;
+```
+### Delete a specific loan application by its ID.
+```sql
+Delete from Loans where ID=2;
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
