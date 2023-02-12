@@ -29,3 +29,10 @@ values( 5,'Michael', 'Davis','michael.davis@example.com',20000,'Education','Deni
 6. insert into Loans(ID, FirstName, LastName, Email, LoanAmount, Purpose, Status) 
 values( 6,'Sarah', 'Wilson','sarah.wilson@example.com',10000,'Home Improvement','Approved');
 ```
+### Select all loan applications from the table
+```sql
+select * from loans;
+```
+
+
+
